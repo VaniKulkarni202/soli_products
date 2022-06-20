@@ -10,6 +10,7 @@ class ProdViewController extends Controller
     public function index()
     {
         $products = DB::select('select * from products');
+        // dd($products);
         return view('prod_view',['products'=>$products]);
     }
 }

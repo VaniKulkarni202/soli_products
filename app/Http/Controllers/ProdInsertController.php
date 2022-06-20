@@ -25,7 +25,7 @@ class ProdInsertController extends Controller
 
             if($success)
             {
-                $msg = "Success";
+                $msg = "Inserted Successfully!";
 
             }
             else

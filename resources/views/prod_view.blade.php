@@ -24,8 +24,20 @@
 <tr>
   <td>{{ $product->prod_name }}</td>
   <td>{{ $product->prod_desc }}</td>
-  <td><button class="button button2">Edit</button>
-  <button class="button button3">Remove</button>
+
+
+  
+  <td><a href="/prod_edit/{{$product->id}}"><button class="button button2">Edit</button></a>
+  <!-- <button class="button button3" onclick="location.href='/destroy'">Remove</button> -->
+  
+  <!-- <form action="/delete/{{ $product->id }}" method="delete">
+  <button class="button button3" type="submit">Delete</button>  
+  </form> -->
+
+  <a href="/delete/{{$product->id}}"><button class="button button3">Delete</button></a>
+
+
+
   </td>
 
 </tr>
